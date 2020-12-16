@@ -1,25 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Javascript Functions</title>
-    <link rel="stylesheet" href="../styles.css"/>
+    <link rel="stylesheet" href="../styles.css" />
 </head>
-<body>
-    
-    <header class="hero">
-        <h3 class="hero-heading" style="color: 10B981;">Javascript Functions</h3>
-    </header>
 
+<body>
+
+    <header class="hero">
+        <h3 class="hero-heading" style="color: #10B981;">Javascript Functions</h3>
+    </header>
+    <hr style="border: 1px solid  #10B981; margin: auto; width: 65%;" />
     <div class="blog">
         <p>
-            This blogpost is based on the chapter from the amazing book eloquent javascript.
+            This blogpost is based on the chapter from the amazing book <a href="https://eloquentjavascript.net/03_functions.html" target="_blank" style="color: #10B981; font-weight: bold; text-decoration: none;">Eloquent Javascript</a>.
             Do check this book out for learning JS.
         </p>
+        <h4>What are functions ?</h4>
         <p>
-            
+            The most simple and relatable definition would be, a function is just a group of code which you can give a
+            name (also known as binding) and use that name to invoke this functionality anytime.
+        </p>
+        <p>
+            <strong>Why would anyone want to use functions and not just write programs line after line ?</strong>
+            <br />
+            Below are some of this benefits and uses of functions.
+        <ul>
+            <li>Functions help to structure your programs. As people write software, the amount of code and the
+                documentation becomes huge. In such a situation it important to divide the program into logical unit
+                called functions, which eventually make the code much more readable and find bugs later on.
+            </li>
+            <li>
+                Functions help to reduce repetition. If you come across a use case or task which would be required in
+                the software at different locations and situations, you can isolate the such code into a function, and
+                instead of writing the whole code again, just invoke the function. It is a huge time saver, also reduces
+                the number of bugs that would be introduced when writing the whole code manually.
+            </li>
+        </ul>
+        </p>
+
+        <p>
+            <strong>How do you define functions in javascript ?</strong>
+            <p>
+                Before discussing ways to define a function, just remember that functions can have a set of parameters (a function without any paramaters is also valid) and a body, the code that the function executes wrapped in curly braces
+            </p>
+
+        <p>
+            There are 3 ways of doing so
+        </p>
+
+        <ol>
+            <li>
+                <strong>Create a function and assign it to a variable</strong>
+            </li>
+            <p>
+                Below code illustrates this method
+            </p>
+            <code>
+                    const square = function(x) 
+                    <br/>{
+                        return x * x;
+                      };
+                      <br/>
+                      console.log(square(12));
+                      // → 144
+                </code>
+            <li>
+                <strong>Declaration Notation</strong>
+            </li>
+            <p>
+                There is a slightly shorter way to create a function binding.
+                Below code illustrates this method
+            </p>
+            <code>
+                function square(x) <br/>{
+                    return x * x;<br/>
+                  }
+            </code>
+            <li>
+                <strong>Arrow functions</strong>
+            </li>
+            <p>
+                it uses an arrow (=>) made up of an equal sign and a greater-than character and can be used to create concise functions, showm below - 
+            </p>
+            <code>
+                const square = x => x*x; 
+            </code>
+            <p>
+                Carefully observing the above code snippet, one can interpret that if the functions accepts only 1 parameter, it need not be enclosed in paranthesis, also if the body contains just one statement, we can omit the return key word and write the statement in the same line.
+            </p>
+        </ol>
+        </p>
+        <p>
+            This was a short blogpost on Javascript functions, hope it provided enough information to get started.
+            For minor details and in-depth knowledge, do visit - <a href="https://eloquentjavascript.net/03_functions.html" target="_blank" style="color: #10B981; font-weight: bold; text-decoration: none;">Eloquent Javascript</a>
         </p>
     </div>
 </body>
+
 </html>
